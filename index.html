@@ -20,7 +20,6 @@
     </div>
 	<img src="moon.png" alt="" id="moon" style="visibility: hidden;"/>
 	<div style="display:none">
-	<div class="shape" id="love">YZH</div>
         <div class="shape" id="label1">Happy</div>
         <div class="shape" id="label2">New</div>
         <div class="shape" id="label3">Year</div>
@@ -79,7 +78,7 @@
                     }
 				}
 				else {
-                    const ids = ["love", "label1", "label2", "label3", "label4", "label5", "label6", "label7", "label8"];
+                    const ids = ["label1", "label2", "label3", "label4", "label5", "label6", "label7", "label8"];
                     const maxl = ids.length;  // document.querySelectorAll(".shape")[subs]
                     console.log(subs);
                     var bigboom = new Boom(getRandom(canvas.width/3,canvas.width*2/3) ,2,"#FFF" , {x:canvas.width/2 , y:200} , document.getElementById(ids[subs]));
