@@ -20,10 +20,14 @@
     </div>
 	<img src="moon.png" alt="" id="moon" style="visibility: hidden;"/>
 	<div style="display:none">
-        <div class="shape" id="label1">Happy New Year</div>
-        <div class="shape" id="label2">Welcome to 2023</div>
-        <div class="shape" id="label3"> </div>
+        <div class="shape" id="label1">Happy</div>
+        <div class="shape" id="label2">New</div>
+        <div class="shape" id="label3">Year</div>
         <div class="shape" id="label4"> </div>
+        <div class="shape" id="label5">Welcome</div>
+        <div class="shape" id="label6">to</div>
+        <div class="shape" id="label7">2023</div>
+        <div class="shape" id="label8"> </div>
 	</div>
 	
 </div>
@@ -63,7 +67,7 @@
             if(newTime-lastTime>(window.innerHeight-767)/2){
             // if(new Date() - lastShow < 1000) {
                 // var random = Math.random()*100>30?true:false;
-                var random = (new Date() - lastShow < 1)?true:false;
+                var random = (new Date() - lastShow < 0.6)?true:false;
                 // var random = false;
 				var x = getRandom(canvas.width/5 , canvas.width*4/5);
 				var y = getRandom(50 , 200);
@@ -74,7 +78,7 @@
                     }
 				}
 				else {
-                    const ids = ["label1", "label2", "label3", "label4"];
+                    const ids = ["label1", "label2", "label3", "label4", "label5", "label6", "label7", "label8"];
                     const maxl = ids.length;  // document.querySelectorAll(".shape")[subs]
                     console.log(subs);
                     var bigboom = new Boom(getRandom(canvas.width/3,canvas.width*2/3) ,2,"#FFF" , {x:canvas.width/2 , y:200} , document.getElementById(ids[subs]));
